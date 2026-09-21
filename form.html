@@ -1,0 +1,62 @@
+<form action="/submit" method="POST">
+    <div>
+    <label for="full Name">
+     Full Name:
+    </label>
+    <input type="text" name="full Name" placeholder="Enter full name....." required >
+    </div> 
+    <br>
+    <br>
+    <div>
+        <label for="Email">Email: </label>
+        <input type="Email" placeholder="Enter your email...." required>
+    </div>
+    <br>
+    <br />
+    <div>
+        <label for="Phone Number"> Phone Number: </label>
+        <input type="tel" name="Phone Number" placeholder="Enter your phone number...." required>
+    </div>
+    <br>
+    <br/>
+    <div>
+        <label for="Subject categories"> Subject categories:</label>
+        <select name="Subject categories">
+            <option value="Select">Select a subject category</option>
+            <option>customer support</option>
+            <option>Sales Inquiry</option>
+            <option>General feedback</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <fieldset>
+         <legend>Preferred Contact Method</legend>
+        <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
+        <label for="contactEmail">Email</label>
+        
+        <input type="radio" id="contactPhone" name="contactMethod" value="phone" required>
+        <label for="contactPhone">Phone</label>
+    </fieldset>
+    <br>
+    <br>
+     <div>
+        <label for="message">Message:</label>
+        <textarea id="messageBody" name="message" rows="5" placeholder="Write your message" required></textarea>
+    </div>
+    <br>
+   <br/>
+
+    <div>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <button type="submit">Submit Form</button>
+        <button type="reset">Clear Data</button>
+    </div>
+
+</form>
