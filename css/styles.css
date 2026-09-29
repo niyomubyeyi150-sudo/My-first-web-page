@@ -5,7 +5,7 @@
     --bg-hover: #334155;
     --accent: #10b981;
     --accent-hover: #059669;
-    --accent-light: rgba(16, 185, 129, 0.15);
+    --accent-light: #10b981;
     --text-primary: #f8fafc;
     --text-muted: #94a3b8;
     --border: #334155;
@@ -76,9 +76,7 @@ a:hover {
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
-/*
-   2. MASTER GRID LAYOUT ENGINE (5-PANEL)
-    */
+
 .dashboard-body {
     padding: 1rem;
 }
@@ -87,7 +85,7 @@ a:hover {
     display: grid;
     gap: 1rem;
     min-height: calc(100vh - 2rem);
-    /* Fixed independent 240px sidebar column, flexible main, 280px right panel */
+   
     grid-template-columns: 240px 1fr 280px;
     grid-template-rows: auto 1fr auto auto;
     grid-template-areas:
@@ -97,7 +95,6 @@ a:hover {
         "sidebar main    profile";
 }
 
-/* Grid Area Class Mapping */
 .div1 { grid-area: sidebar;
     grid-area: sidebar;
     height: 100%;                  /* Stretches to match the full height */
@@ -382,9 +379,7 @@ th {
 .form-group textarea:focus {
     border-color: var(--accent);
 }
-/* ==========================================
-   HOMEPAGE CUSTOM LAYOUT (NO GRID)
-   ========================================== */
+
 
 /* Top Header Bar */
 body.home-page .top-header {
@@ -477,12 +472,12 @@ body.home-page .hero-description {
 
 /* Red Button Style */
 .btn-danger {
-    background-color: #c53030;
+    background-color: #248253;
     color: #ffffff;
 }
 
 .btn-danger:hover {
-    background-color: #9b2c2c;
+    background-color: #b5e3bc;
     color: #ffffff;
 }
 
